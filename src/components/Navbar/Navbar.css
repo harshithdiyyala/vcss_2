@@ -1,7 +1,7 @@
 .navbar-container{
     backdrop-filter: blur(12px);
     height:4.5rem;
-    background-color: #eeeeff8a;
+    background-color: #f8f8ff9a;
     position:fixed;
     width:100%;
     z-index: 1000;
