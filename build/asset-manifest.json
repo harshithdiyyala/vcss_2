@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.749ca81b.css",
+    "main.js": "/static/js/main.8d18f14b.js",
+    "static/js/453.bbe64167.chunk.js": "/static/js/453.bbe64167.chunk.js",
+    "static/media/hero-img3.jpg": "/static/media/hero-img3.973e7b2ae367c658a47f.jpg",
+    "static/media/vcss_with_dog2.jpeg": "/static/media/vcss_with_dog2.fa6020679a4911910e00.jpeg",
+    "static/media/vcss_with_dog.jpeg": "/static/media/vcss_with_dog.4e9cc4e6a7062f32e0f1.jpeg",
+    "static/media/fire-protection.jpg": "/static/media/fire-protection.db84f2b66fb3af5a0394.jpg",
+    "static/media/hero-img.jpg": "/static/media/hero-img.5e3bf291a838e96ee4b8.jpg",
+    "static/media/cctv.jpg": "/static/media/cctv.c4748e32a1ab305d178f.jpg",
+    "static/media/cleaner.jpg": "/static/media/cleaner.1bdd8812a84044841070.jpg",
+    "static/media/event-security.png": "/static/media/event-security.a1254b4b5c03c2ef2309.png",
+    "static/media/hero-image1.jpg": "/static/media/hero-image1.42a8e0e2d60f38f2b84f.jpg",
+    "static/media/mobile-security.jpeg": "/static/media/mobile-security.b403b9c04eb040bb055f.jpeg",
+    "static/media/vcss_security.jpeg": "/static/media/vcss_security.1767688199e77bd75079.jpeg",
+    "static/media/vcss_personnel.jpeg": "/static/media/vcss_personnel.30ab2f5b34684a352c1c.jpeg",
+    "static/media/hero-image2.jpg": "/static/media/hero-image2.a90279af8c3709113468.jpg",
+    "static/media/construction-security.jpg": "/static/media/construction-security.482ce48311d9d1fa69f4.jpg",
+    "static/media/commercial-security.jpg": "/static/media/commercial-security.7aa943ef7065c0908080.jpg",
+    "static/media/residential-security.jpg": "/static/media/residential-security.59eb57d06d498b500110.jpg",
+    "static/media/VCSS_Logo_new.png": "/static/media/VCSS_Logo_new.547890bf70af7d5a8b7d.png",
+    "static/media/VCSS_Logo_f.png": "/static/media/VCSS_Logo_f.d376a529e0572d919aab.png",
+    "static/media/uniformed-security.jpg": "/static/media/uniformed-security.9fc75a6c068cacb35d72.jpg",
+    "static/media/alarm-response.jpg": "/static/media/alarm-response.7a559be92d773c0838a8.jpg",
+    "static/media/loss-prevention.jpg": "/static/media/loss-prevention.f68a4982f73356b28a12.jpg",
+    "static/media/onsite-security.jpg": "/static/media/onsite-security.df0ed28044d4e42f78dd.jpg",
+    "static/media/steward.jpg": "/static/media/steward.5bed125e6710d59ead5c.jpg",
+    "static/media/global.png": "/static/media/global.f1f1c41d204841b720d7.png",
+    "static/media/gb.png": "/static/media/gb.b9a2ba74e5f8a55977e7.png",
+    "static/media/ca.png": "/static/media/ca.07849426f9b46d419f07.png",
+    "static/media/contact_bg.png": "/static/media/contact_bg.ca5964160ed1f757baaa.png",
+    "index.html": "/index.html",
+    "main.749ca81b.css.map": "/static/css/main.749ca81b.css.map",
+    "main.8d18f14b.js.map": "/static/js/main.8d18f14b.js.map",
+    "453.bbe64167.chunk.js.map": "/static/js/453.bbe64167.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.749ca81b.css",
+    "static/js/main.8d18f14b.js"
+  ]
+}

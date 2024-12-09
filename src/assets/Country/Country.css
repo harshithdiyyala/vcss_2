@@ -1,0 +1,35 @@
+
+.country-flag {
+    width: 2.25rem; 
+}
+.drop-down {
+    background-color: #eeeeff;
+    border-radius: 1rem;
+    padding:0.5rem;
+    position: absolute;
+    right:0.75rem;
+    top:4.2rem;
+    border: 1px solid rgba(246, 248, 237, 0.2);
+}
+.dropdown-arrow{
+    stroke-width: 1.5;
+    font-size:0.75rem;
+    padding:0 0.2rem;
+}
+.dropdown-container {
+    position:relative;
+    cursor:pointer;
+    color: #0d0b4e;
+    font-size: 1.25rem;
+
+}
+.dropdown-arrow-rotate {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
+}
+@media (max-width:768px) {
+    .country-flag{
+        width:2rem;
+    }
+    
+}
