@@ -43,7 +43,7 @@ const Hero = () => {
           </div>
         ))}
         <div className="hero-content hero-glass">
-          <h1 className="hero-title region-title">
+          <h1 className="hero-title ">
             Empowering{" "}
             <span
               className="

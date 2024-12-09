@@ -1,5 +1,5 @@
 .navbar-container{
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
     height:4.5rem;
     background-color: #eeeeff8a;
     position:fixed;
@@ -21,7 +21,7 @@
     font-size: 2rem;
     line-height: 1.3;
     color: #0d0b4e;
-    font-family: Acme, "EB Garamond" !important;
+    font-family: "EB Garamond" !important;
     letter-spacing: 1.1px;
 }
 nav a{
@@ -41,6 +41,7 @@ nav a:hover{
 .navbar-menu{
     display:flex;
 }
+
 @media (max-width:768px){
     .mobile-nav {
         display: inline;
