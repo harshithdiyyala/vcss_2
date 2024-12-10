@@ -8,7 +8,11 @@ const RegionContextProvider = ({ children }) => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    navigate(`/${region}`, { replace: true })
+    if (region === "Global") {
+      navigate("/", { replace: true })
+    } else {
+      navigate(`/${region}`, { replace: true })
+    }
   }, [region])
 
   return <RegionContext.Provider value={{ region, setRegion }}>{children}</RegionContext.Provider>

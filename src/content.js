@@ -48,7 +48,7 @@ export const heroContent = {
 }
 
 export const logoContent = {
-  Canada: "VCSS SECURITY",
+  Canada: "VCSS",
   UK: "VCSS",
   Global: "VCSS",
 }

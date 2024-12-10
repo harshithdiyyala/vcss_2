@@ -15,6 +15,18 @@ function App() {
         <Navbar />
         <Routes>
           <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Services />
+                <Blog />
+                <Contact />
+              </>
+            }
+          />
+
+          <Route
             path="/:region"
             element={
               <>
