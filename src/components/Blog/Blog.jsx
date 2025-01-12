@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { blogContent } from "../../content"
 import "./Blog.css"
+import { Link } from "react-router-dom"
+import { FaExternalLinkAlt, FaLink } from "react-icons/fa"
 
 const Blog = () => {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -61,6 +63,17 @@ const Blog = () => {
                   </div>
                 </div>
               ))}
+
+              <Link
+                to="/about"
+                className="content-item about-us-link">
+                {" "}
+                <span>Know More</span>
+                <FaExternalLinkAlt
+                  className="link-icon"
+                  size={18}
+                />
+              </Link>
             </div>
           </div>
         </div>

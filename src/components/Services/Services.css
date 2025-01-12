@@ -37,6 +37,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 27rem; /* Ensures all cards maintain the same height */
   padding-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -102,7 +103,15 @@
   margin-bottom:1rem;
   
 }
-
+.service-page-title {
+  margin:1.5rem 0;
+  text-align: center;
+  /* -webkit-text-stroke-color: #0d0b4e; */
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-size-adjust: 2rem;
+  -webkit-text-stroke-color:#cda406; ;
+  color: transparent;
+}
 
 @media (max-width: 768px) { /* 768px converted to rem */
   .services-container {
@@ -110,11 +119,21 @@
     padding: 0.9375rem; /* 15px padding for smaller devices */
   }
   .services-description {
-    padding:0 1rem;
+    
+  }
+  .service-page-title {
+    margin:1.5rem 0;
+    text-align: center;
+    /* -webkit-text-stroke-color: #0d0b4e; */
+    /* -webkit-text-stroke-width: 1.5px;
+    -webkit-text-size-adjust: 2rem;
+    -webkit-text-stroke-color:#cda406; ;
+    color: transparent; */
+    color : #cda406;
   }
 
   .card {
-    width: calc(100% - 3rem); /* Adds space around the card (adjusted for padding) */
+    width: calc(100% - 1rem); /* Adds space around the card (adjusted for padding) */
     max-width: 95%; /* Ensure card doesn't fill the screen entirely */
     height:auto;
   }
@@ -138,10 +157,4 @@
 
 .service-page {
   margin-top:4.5rem;
-}
-.service-page-title {
-  margin:1.5rem 0;
-  color:transparent;
-  text-align: center;
-  -webkit-text-stroke-color: #0d0b4e;
 }

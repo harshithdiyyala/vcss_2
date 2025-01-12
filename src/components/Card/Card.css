@@ -1,0 +1,78 @@
+.horizontal-card-container {
+  max-width: 1220px;
+}
+
+.horizontal-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  margin:3.5rem 0;
+  width: 100%;
+  padding: 0 4rem;
+  height: 50vh;
+
+}
+
+.horizontal-card.reverse {
+  flex-direction: row-reverse;
+}
+.content-card-image {
+  width:53%;
+  height:100%;
+  border-radius: 16px;
+  object-fit:fill;
+}
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .horizontal-card {
+    flex-direction: column;
+    height:auto;
+    padding:1rem;
+  }
+
+  .horizontal-card.reverse {
+    flex-direction: column;
+  }
+
+  .content-card-image {
+    width: 100%;
+    height: 100%;
+  }
+  .content-card-content {
+    font-size: 0.8rem;
+  }
+  .padding-left-none,.padding-right-none {
+    padding: 1rem !important;
+    font-weight:500;
+  }
+}
+
+
+
+.content-card-content {
+  
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--primary);
+  text-align: justify;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.card-content p {
+  margin: 0 0 1rem 0;
+}
+.padding-left-none {
+  padding-left:0px;
+  padding-right: 4rem;
+}
+.padding-right-none {
+  padding-right: 0px;
+  padding-left: 4rem;
+}

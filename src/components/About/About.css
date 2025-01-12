@@ -1,0 +1,27 @@
+.about-card p {
+    padding-left:0px;
+    padding-right:3rem;
+    margin-left:0px;
+}
+.about-card-container {
+    margin-top: 5rem;
+}
+.about-card {
+    padding:0px;
+}
+@media (max-width:768px){
+    .about-card p {
+        padding-right:0px;
+        text-align: left;
+    }
+    .about-card img {
+        order:0;
+    }
+    .about-card {
+        flex-direction: column-reverse;
+    }
+    .about-us-tagline {
+        padding: 0px;
+    }
+
+}

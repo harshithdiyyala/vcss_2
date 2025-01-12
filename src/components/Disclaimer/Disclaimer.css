@@ -1,0 +1,39 @@
+/* disclaimer.css */
+.disclaimer-container {
+    padding: 75px;
+    font-weight: 500;
+    color: black;
+    font-size: 1.125rem; /* text-lg */
+    line-height: 2rem; /* leading-8 */
+  }
+  
+  .disclaimer-heading {
+    color: #cda406;
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold;
+  }
+  
+  .disclaimer-subheading {
+    color: #0d0b4e;
+    font-size: 1.125rem; /* text-lg */
+    margin: 0.5rem 0; /* my-2 */
+  }
+  
+  .disclaimer-paragraph {
+    margin: 1rem 0;
+  }
+  
+  .disclaimer-link {
+    color: #1e3a8a; /* text-blue-800 */
+    text-decoration: none;
+  }
+  
+  .disclaimer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .disclaimer-highlight {
+    color: #0d0b4e;
+    font-weight: 600; /* font-semibold */
+  }
+  

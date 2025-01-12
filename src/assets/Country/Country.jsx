@@ -2,14 +2,17 @@ import React, { useEffect, useState } from "react"
 import { FiChevronDown } from "react-icons/fi"
 import { countries } from "../../content"
 import "./Country.css"
+import { useNavigate } from "react-router-dom"
 
 const countrys = new Map(countries.map((country) => [country.name, country]))
 
 const CountrySelect = ({ region, setRegion }) => {
   const [isOpen, setIsOpen] = useState(false)
+  const navigate = useNavigate()
 
   const handleSelectChange = (val) => {
     setRegion(val)
+    navigate("/")
     toggleDropdown()
   }
   useEffect(() => {

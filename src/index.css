@@ -183,6 +183,7 @@ body {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 1rem;
 }
 .flex-container, .flex-st-container {
   display: flex;

@@ -105,3 +105,20 @@
     position: absolute; 
     transition: background-color 0.5s ease-in; 
 }
+.about-us-link {
+    all :unset;
+    text-align: left;
+    font-size:1.2rem;
+    font-weight:600;
+    width:100%;
+    margin-left:2rem;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+.about-us-link:hover {
+    color: #0d0b4e9a;
+}
+.link-icon {
+    margin: 0px 0.5rem;
+}

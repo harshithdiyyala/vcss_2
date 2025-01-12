@@ -5,7 +5,8 @@
     padding-top: 1.5rem;
     line-height: 1.4;
     bottom:0;
-    position: sticky;
+    position: static;
+
   }
   
   .footer-container {

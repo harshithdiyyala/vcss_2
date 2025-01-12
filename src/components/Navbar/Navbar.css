@@ -1,6 +1,6 @@
 .navbar-container{
     backdrop-filter: blur(12px);
-    height:4.5rem;
+    height:3.75rem;
     background-color: #f8f8ff9a;
     position:fixed;
     width:100%;
@@ -9,7 +9,7 @@
     
 }
 .logo {
-    height: 3.5rem;
+    height: 3.25rem;
     background-color: transparent;
 }
 .navbar-shadow {
@@ -26,7 +26,8 @@
 }
 nav a{
     inset:0;
-    font-size:1.21rem;
+    font-size:1.1rem;
+    font-weight:600;
     color: #0d0b4e;
     margin: 0.5rem;
 }

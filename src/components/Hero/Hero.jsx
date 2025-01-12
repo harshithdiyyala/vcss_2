@@ -29,7 +29,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="hero-container">
+      <div className="hero-container container mx-auto">
         {heroImages.map((image, index) => (
           <div
             key={index}
@@ -42,7 +42,7 @@ const Hero = () => {
             />
           </div>
         ))}
-        <div className="hero-content hero-glass">
+        <div className="hero-content hero-glass ">
           <h1 className="hero-title ">
             Empowering{" "}
             <span

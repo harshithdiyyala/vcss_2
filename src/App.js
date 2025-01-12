@@ -7,6 +7,11 @@ import Navbar from "./components/Navbar/Navbar"
 import Services from "./components/Services/Services"
 import RegionContextProvider from "./context/RegionContext"
 import Service from "./components/Services/Service"
+import ContactPage from "./components/Contact/ContactPage"
+import Terms from "./components/Terms/Terms"
+import Disclaimer from "./components/Disclaimer/Disclaimer"
+import Privacy from "./components/Privacy/Privacy"
+import About from "./components/About/About"
 
 function App() {
   return (
@@ -18,10 +23,18 @@ function App() {
             path="/"
             element={
               <>
-                <Hero />
-                <Services />
-                <Blog />
-                <Contact />
+                <section id="hero">
+                  <Hero />
+                </section>
+                <section id="services">
+                  <Services />
+                </section>
+                <section id="about">
+                  <Blog />
+                </section>
+                <section id="contact">
+                  <Contact />
+                </section>
               </>
             }
           />
@@ -38,11 +51,29 @@ function App() {
             }
           />
           <Route
-            path="/services"
+            path="/services/:service"
             element={<Service />}
           />
-          <Route path="/about" />
-          <Route path="/contact" />
+          <Route
+            path="/about"
+            element={<About />}
+          />
+          <Route
+            path="/contact"
+            element={<ContactPage />}
+          />
+          <Route
+            path="/terms-and-conditions"
+            element={<Terms />}
+          />
+          <Route
+            path="/disclaimer"
+            element={<Disclaimer />}
+          />
+          <Route
+            path="/privacy"
+            element={<Privacy />}
+          />
         </Routes>
         <Footer />
       </div>

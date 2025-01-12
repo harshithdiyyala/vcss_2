@@ -1,0 +1,46 @@
+
+.terms-container {
+    padding: 75px;
+    font-weight: 500;
+    color: black;
+    font-size: 1.125rem; 
+    line-height: 2rem; 
+  }
+  
+  .terms-heading {
+    color: #cda406;
+    font-size: 1.5rem; 
+    font-weight: bold;
+  }
+  
+  .terms-subheading {
+    color: #0d0b4e;
+    font-size: 1.125rem; 
+    margin: 0.5rem 0; 
+  }
+  
+  .terms-link {
+    color: #1e40af; 
+    font-weight: 600;
+  }
+  
+  .terms-paragraph {
+    margin: 1rem 0; 
+  }
+  
+  .terms-list {
+    margin-left: 0.75rem; 
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  
+  .terms-highlight {
+    color: #cda406;
+  }
+  
+  .terms-small-text {
+    color: #0d0b4e;
+    font-size: 0.875rem; 
+    margin: 0.5rem 0; 
+  }
+  

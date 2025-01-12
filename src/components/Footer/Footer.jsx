@@ -2,7 +2,7 @@ import React from "react"
 import "./Footer.css"
 import Logo from "../../assets/images/logos/VCSS_Logo_f.png"
 import { footerDescription, footerContent } from "../../content"
-import { RegionContext } from "../../context/RegionContext"
+import RegionContextProvider, { RegionContext } from "../../context/RegionContext"
 import { useContext } from "react"
 
 import { Link } from "react-router-dom"
@@ -32,40 +32,46 @@ const Footer = () => {
               <div className="footer-links">
                 <div>
                   <h4 className="footer-heading">Quick Links</h4>
-                  <a
-                    href="/terms-and-conditions"
+                  <Link
+                    to="/terms-and-conditions"
                     className="footer-link">
                     Terms & Conditions
-                  </a>
-                  <a
-                    href="/disclaimer"
+                  </Link>
+                  <Link
+                    to="/disclaimer"
                     className="footer-link">
                     Disclaimer
-                  </a>
-                  <a
-                    href="/privacy"
+                  </Link>
+                  <Link
+                    to="/privacy"
                     className="footer-link">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </div>
                 <div>
                   <h4 className="footer-heading">Address</h4>
-                  <p>{footerContent[region]?.additionalData}</p>
-                  <p>{footerContent[region]?.addressLine1}</p>
-                  <p>{footerContent[region]?.addressLine2}</p>
-                  {footerContent[region]?.mail && (
-                    <a
-                      href={`mailto:${footerContent[region]?.mail}`}
-                      className="footer-contact">
-                      <FiMail /> {footerContent[region]?.mail}
-                    </a>
-                  )}
-                  {footerContent[region]?.tel && (
-                    <a
-                      href={`tel:${footerContent[region]?.tel}`}
-                      className="footer-contact">
-                      <FaPhoneAlt /> {footerContent[region]?.tel}
-                    </a>
+                  {region !== "Global" ? (
+                    <>
+                      <p>{footerContent[region]?.additionalData}</p>
+                      <p>{footerContent[region]?.addressLine1}</p>
+                      <p>{footerContent[region]?.addressLine2}</p>
+                      {footerContent[region]?.mail && (
+                        <a
+                          href={`mailto:${footerContent[region]?.mail}`}
+                          className="footer-contact">
+                          <FiMail /> {footerContent[region]?.mail}
+                        </a>
+                      )}
+                      {footerContent[region]?.tel && (
+                        <a
+                          href={`tel:${footerContent[region]?.tel}`}
+                          className="footer-contact">
+                          <FaPhoneAlt /> {footerContent[region]?.tel}
+                        </a>
+                      )}
+                    </>
+                  ) : (
+                    <Link to="/contact">Contact Us</Link>
                   )}
                 </div>
               </div>
