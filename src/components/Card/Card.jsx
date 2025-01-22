@@ -11,8 +11,8 @@ const ContentCard = ({ image, content, imageOnRight = false }) => {
           alt="Card visual"
         />
 
-        <div className={`content-card-content ${imageOnRight ? "padding-left-none" : "padding-right-none"}`}>
-          <p>{content}</p>
+        <div className={`hero-desc content-card-content ${imageOnRight ? "padding-left-none" : "padding-right-none"}`}>
+          <p className="content-font">{content}</p>
         </div>
       </div>
     </div>
