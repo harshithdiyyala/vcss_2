@@ -48,6 +48,7 @@ const Navbar = () => {
           <div>
             <Link to="/contact">Contact Us</Link>
           </div>
+
           <CountrySelect
             region={region}
             setRegion={setRegion}
@@ -57,7 +58,7 @@ const Navbar = () => {
           <div
             className="flex-container navbar-menu"
             style={{ flex: 1, justifyContent: "space-between", maxWidth: "55%" }}>
-            <Link to="/services">services</Link>
+            <Link to="/services">Services</Link>
             <Link to="/about">About Us</Link>
             <Link to="/contact">Contact Us</Link>
             <CountrySelect

@@ -64,13 +64,10 @@
 }
 .contact-us-message-heading {
     margin:1.5rem 0;
-    -webkit-text-stroke-color: #0d0b4e;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-size-adjust: 2rem;
-    color: transparent;
-    font-style: italic;
+     font-style: italic;
     font-size:4rem;
     text-align: left;
+    color:#0d0b4e;
 }
 .contactpage-container form label {
     font-size: 1rem;

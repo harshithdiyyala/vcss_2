@@ -2,12 +2,12 @@ import React from "react"
 import "./Footer.css"
 import Logo from "../../assets/images/logos/VCSS_Logo_f.png"
 import { footerDescription, footerContent } from "../../content"
-import RegionContextProvider, { RegionContext } from "../../context/RegionContext"
+import { RegionContext } from "../../context/RegionContext"
 import { useContext } from "react"
 
 import { Link } from "react-router-dom"
 import { FiMail } from "react-icons/fi"
-import { FaPhone, FaPhoneAlt } from "react-icons/fa"
+import { FaPhoneAlt } from "react-icons/fa"
 
 const currentYear = new Date().getFullYear()
 
@@ -71,7 +71,11 @@ const Footer = () => {
                       )}
                     </>
                   ) : (
-                    <Link to="/contact">Contact Us</Link>
+                    <Link
+                      to="/contact"
+                      className="footer-link">
+                      Contact Us
+                    </Link>
                   )}
                 </div>
               </div>

@@ -45,7 +45,7 @@ const Service = () => {
                 href="#contact_us"
                 style={{ textAlign: "center" }}
                 className="contact-btn">
-                Get Started
+                Request Enquiry
               </a>
             </div>
           </div>

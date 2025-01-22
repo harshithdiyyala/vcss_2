@@ -12,10 +12,12 @@ import Terms from "./components/Terms/Terms"
 import Disclaimer from "./components/Disclaimer/Disclaimer"
 import Privacy from "./components/Privacy/Privacy"
 import About from "./components/About/About"
+import ScrollToTop from "./ScrollToTop"
 
 function App() {
   return (
     <RegionContextProvider>
+      <ScrollToTop />
       <div className="">
         <Navbar />
         <Routes>

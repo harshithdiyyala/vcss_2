@@ -107,10 +107,10 @@
   margin:1.5rem 0;
   text-align: center;
   /* -webkit-text-stroke-color: #0d0b4e; */
-  -webkit-text-stroke-width: 1.5px;
+  /* -webkit-text-stroke-width: 1.5px;
   -webkit-text-size-adjust: 2rem;
   -webkit-text-stroke-color:#cda406; ;
-  color: transparent;
+  color: transparent; */
 }
 
 @media (max-width: 768px) { /* 768px converted to rem */
