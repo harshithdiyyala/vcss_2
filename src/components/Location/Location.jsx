@@ -16,7 +16,7 @@ const Location = () => {
             {/* <div className="map-container"> */}
             <iframe
               title="UK Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.7621919203734!2d-0.2424004235143324!3d51.75567197187075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763c62e0ac0969%3A0x9659b62a388c92e1!2s18%20Fern%20Dells%2C%20Hatfield%20AL10%209HX%2C%20UK!5e0!3m2!1sen!2sin!4v1736684170340!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d617.3485130726327!2d-0.2448563215971309!3d51.76240302670371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763d1dd05a746b%3A0x268bef1ebc209d5d!2sV%20Connect%20Security%20Services!5e0!3m2!1sen!2sin!4v1740487380046!5m2!1sen!2sin"
               style={{ border: "0px" }}
               className="card-image"
               allowFullScreen=""

@@ -1,36 +1,38 @@
-
 .country-flag {
-    width: 2.25rem; 
+    width: 2.25rem;
 }
+
 .drop-down {
     background-color: #eeeeff;
     border-radius: 1rem;
-    padding:0.5rem;
+    padding: 0.5rem;
     position: absolute;
-    right:0.75rem;
-    top:4rem;
+    right: 0.75rem;
+    top: 4rem;
     border: 1px solid rgba(246, 248, 237, 0.2);
 }
-.dropdown-arrow{
+
+.dropdown-arrow {
     stroke-width: 1.25;
-    font-size:0.5rem;
-    padding:0 0.2rem;
+    font-size: 0.5rem;
+    padding: 0 0.2rem;
 }
+
 .dropdown-container {
-    position:relative;
-    cursor:pointer;
+    position: relative;
+    cursor: pointer;
     color: #0d0b4e;
     font-size: 1.115rem;
-    font-weight: 600;
-
+    font-weight: 500;
 }
+
 .dropdown-arrow-rotate {
     transform: rotate(180deg);
     transition: transform 0.5s ease-in-out;
 }
+
 @media (max-width:768px) {
-    .country-flag{
-        width:2rem;
+    .country-flag {
+        width: 2rem;
     }
-    
 }

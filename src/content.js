@@ -227,7 +227,7 @@ export const socialContactLinksGlobal = [...socialContactLinks.Canada, ...social
 export const footerDescription = "The V Connect, a leading provider of job opportunities across the United Kingdom. Our mission is to connect job seekers with rewarding employment opportunities in a variety of sectors, including security services, Staffing/recruiting services, events, and many others."
 export const footerContent = {
   Canada: { addressLine1: "25 Baymills Blvd", addressLine2: "Barrie, ON. L4N 7C9", mail: "info@vcsscanada.com", tel: "+1(579)995-3402" },
-  UK: { addressLine1: "18 Fern dells, Hatfield", addressLine2: "AL10 9HX, United Kingdom", mail: "info@vcss.uk", tel: "+447864512999", additionalData: "Company registered in England and Wales under the Company number: 14675823" },
+  UK: { addressLine1: "2nd Floor, Titan Court, Bishop Square", addressLine2: "Hatfield AL10 9NA, United Kingdom", mail: "info@vcss.uk", tel: "+447864512999", additionalData: "Company registered in England and Wales under the Company number: 14675823" },
 }
 
 export const termsAndConditions = [

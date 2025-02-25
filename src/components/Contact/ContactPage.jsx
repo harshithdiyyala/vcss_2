@@ -16,7 +16,7 @@ const ContactPage = () => {
     <div
       className="container mx-auto contactpage"
       style={{ marginTop: "5rem" }}>
-      <h1 className="contact-us-message-heading"> Drop Us a Message!</h1>
+      <h1 className="contact-us-message-heading"> Drop Us a Message</h1>
       <p className="card-description">Feel free to contact us for any query, feedback or suggestion. We will be happy to assist you as soon as possible.</p>
       <div className="contactpage-icon-container">
         {region !== "Global"
