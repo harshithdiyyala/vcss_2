@@ -32,10 +32,11 @@ const Service = () => {
             />
           </div>
           <div className="hero-content2">
-            <h1 className=" service-page-title  region-title hero-title"> {mainContent.title} </h1>
+            <div >
+            <h1 className=" service-page-title  region-title hero-title" > {mainContent.title} </h1>
             <p
               className="hero-desc hero-desc2"
-              style={{ color: "#f8f8ff", textAlign: "center" }}>
+              style={{ color: "#f8f8ff", textAlign: "center",  }}>
               {mainContent.longContent}
             </p>
             <div
@@ -47,6 +48,7 @@ const Service = () => {
                 className="contact-btn">
                 Request Enquiry
               </a>
+            </div>
             </div>
           </div>
         </div>

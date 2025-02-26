@@ -4,3 +4,20 @@
 .success-msg {
     color: #00ff00;
 }
+.enquirypage-container {
+    justify-content: center;
+    align-items: center;
+    
+}
+.enquirypage-container > form {
+    width:auto;
+    background: rgba( 203, 164, 6, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+backdrop-filter: blur( 9px );
+-webkit-backdrop-filter: blur( 9px );
+border-radius: 16px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.enquirypage-container > form > input, .enquirypage-container > form > textarea {
+    background-color: transparent;
+}

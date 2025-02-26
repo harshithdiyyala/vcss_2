@@ -58,7 +58,7 @@ const Enquiry = ({ category }) => {
   return (
     <div className="container mx-auto">
       <div className="enquirypage-container contactpage-container">
-        <form onSubmit={submitHandler}>
+        <form onSubmit={submitHandler} >
           <h1>Get Service at your Doorstep</h1>
           <p
             className="services-description"
@@ -131,12 +131,7 @@ const Enquiry = ({ category }) => {
           {errorMsg && <p className="error-msg">{errorMsg}</p>}
           {successMsg && <p>{successMsg}</p>}
         </form>
-        <div className="contactpage-banner-img">
-          <img
-            alt="enquiry_us"
-            src={imgLink}
-          />
-        </div>
+      
       </div>
     </div>
   )
