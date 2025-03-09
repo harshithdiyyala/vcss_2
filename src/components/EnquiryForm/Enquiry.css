@@ -19,5 +19,5 @@ border-radius: 16px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .enquirypage-container > form > input, .enquirypage-container > form > textarea {
-    background-color: transparent;
+    background-color: white;
 }
