@@ -7,8 +7,8 @@ import { useContext } from "react"
 
 import { Link } from "react-router-dom"
 import { FiMail } from "react-icons/fi"
-import { FaPhoneAlt } from "react-icons/fa"
-import { FaLocationDot } from "react-icons/fa6"
+import { FaInstagram, FaPhoneAlt } from "react-icons/fa"
+import { FaFacebook, FaLocationDot, FaWhatsapp, FaX } from "react-icons/fa6"
 
 const currentYear = new Date().getFullYear()
 
@@ -28,6 +28,12 @@ const Footer = () => {
                   alt="Logo"
                   className="footer-logo"
                 />
+                <div className="links">
+                  <a href ="/"> <FaWhatsapp/> </a>
+                  <a href ="/"><FaFacebook/> </a>
+                  <a href ="/"> <FaInstagram/> </a>
+                  <a href ="/"> <FaX/></a>
+                </div>
                 {/* <p>{footerDescription}</p> */}
               </div>
               <div className="footer-links">
