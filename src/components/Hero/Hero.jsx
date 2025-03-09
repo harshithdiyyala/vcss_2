@@ -4,29 +4,40 @@ import heroImage from "../../assets/images/hero/hero-image1.jpg"
 import heroImage2 from "../../assets/images/hero/hero-image2.jpg"
 import heroImage3 from "../../assets/images/hero/hero-img3.jpg"
 import heroImage4 from "../../assets/images/hero/hero-img.jpg"
+import heroImage5 from "../../assets/images/hero/hero-image5.JPG"
+import heroImage6 from '../../assets/images/hero/hero-image6.JPG'
+import heroImage7 from '../../assets/images/hero/hero-image7.jpg'
+import canadaHome from "../../assets/images/hero/canada-home.jpg"
+import ukHome from '../../assets/images/hero/uk-home.jpg'
 import { RegionContext } from "../../context/RegionContext"
 import { GrNext, GrPrevious } from "react-icons/gr"
 import { heroContent } from "../../content"
-
-const heroImages = [heroImage2, heroImage3, heroImage4]
+const initialImages = [heroImage5, heroImage6, heroImage7]
 
 const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const { region } = useContext(RegionContext)
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % heroImages.length)
-  }
+const { region } = useContext(RegionContext);
+const [currentSlide, setCurrentSlide] = useState(0);
+const [heroImages, setHeroImages] = useState(initialImages);
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length)
-  }
+useEffect(() => {
+  setHeroImages(() =>
+    region === "UK" ? [...initialImages, ukHome] : region === 'Canada' ? [...initialImages, canadaHome]  : [...initialImages]
+  );
+}, [region]);
 
-  useEffect(() => {
-    const timer = setInterval(nextSlide, 5000)
-    return () => clearInterval(timer)
-  }, [])
+const nextSlide = () => {
+  setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+};
 
+const prevSlide = () => {
+  setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length);
+};
+
+useEffect(() => {
+  const timer = setInterval(nextSlide, 5000);
+  return () => clearInterval(timer);
+}, [heroImages]); // Ensure re-run if heroImages change
   return (
     <>
       <div className="hero-container container mx-auto">
@@ -43,20 +54,22 @@ const Hero = () => {
           </div>
         ))}
         <div className="hero-content hero-glass ">
-          <h1 className="hero-title ">
-            Empowering{" "}
-            <span
+          <h1 className="hero-title hero-title3">
+            
+            {/* <span
               className="
           region-title">
               {region === "Global" ? "Global" : `${region}'s`}
-            </span>{" "}
-            Workforce
+            </span>{" "} */}
+            Welcome to 
+            <br/>
+            V Connect Security Services
           </h1>
-          <p
+          {/* <p
             className="hero-desc"
             style={{ color: "#f8f8ff" }}>
             {heroContent[`${region}`]}
-          </p>
+          </p> */}
           <div className="image-change-container flex-container">
             <button
               className="carousel-btn"

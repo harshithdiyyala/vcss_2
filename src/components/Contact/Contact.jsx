@@ -8,7 +8,7 @@ const Contact = () => {
     <section id="contact">
       <div className="container mx-auto">
         <div className="contact-banner-container">
-          <h3 className="services-title">Connect with your VCSS</h3>
+          <h3 className="services-title">Connect with V Connect Security Services</h3>
           <p className="services-description">We’re here to ensure your safety. Get in touch with us today!</p>
           <button
             className="contact-btn"

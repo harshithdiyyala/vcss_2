@@ -30,6 +30,9 @@ import VCSSBLog4 from "./assets/images/blogs/vcss_with_dog2.jpeg"
 import ServiceContent1 from "./assets/images/services/content/sia_content1.png"
 import ServiceContent2 from "./assets/images/services/content/sia_content2.jpg"
 import ServiceContent3 from "./assets/images/services/content/sia_content3.webp"
+import eventSecurity1 from "./assets/images/features/eventSecurity1.jpg"
+import eventSecurity2 from "./assets/images/features/eventSecurity2.jpg"
+import eventSecurity3 from "./assets/images/features/eventSecurity3.jpg"
 import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 
 export const countries = [
@@ -296,7 +299,7 @@ export const servicesDescriptionsCanada = [
       "Our trained professionals proactively monitor venues, handle potential disturbances, and respond swiftly to incidents. Utilizing advanced technologies and proven strategies, we address unforeseen challenges while maintaining a calm and controlled atmosphere.",
       "Every event is unique, and so are our solutions. We work closely with organizers to tailor our security measures to the specific scale and nature of the event. With our expertise, you can focus on delivering an exceptional experience while we ensure the safety of everyone involved.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [eventSecurity1,eventSecurity2,eventSecurity3],
   },
   {
     link: "construction-security",
@@ -479,7 +482,7 @@ export const servicesDescriptionsUK = [
       "From access control and crowd management to on-site security personnel, our services are designed to handle events of all sizes. We provide visible and proactive security solutions that deter potential threats and ensure the safety of attendees.",
       "Choose our Event Security services for a seamless and secure event experience. We prioritize safety and professionalism, ensuring your event proceeds without interruptions.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [eventSecurity1,eventSecurity2,eventSecurity3],
   },
   {
     link: "construction-security",

@@ -13,6 +13,7 @@ import Disclaimer from "./components/Disclaimer/Disclaimer"
 import Privacy from "./components/Privacy/Privacy"
 import About from "./components/About/About"
 import ScrollToTop from "./ScrollToTop"
+import Careers from "./components/Careers/Careers"
 
 function App() {
   return (
@@ -75,6 +76,10 @@ function App() {
           <Route
             path="/privacy"
             element={<Privacy />}
+          />
+          <Route 
+          path ="/careers"
+          element = {<Careers/>}
           />
         </Routes>
         <Footer />

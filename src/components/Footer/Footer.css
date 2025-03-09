@@ -1,11 +1,14 @@
 .footer {
-    font-size: 1.2rem;
+    font-size: 1rem !important;
     width: 100%;
     color: #101828;
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     line-height: 1.4;
     bottom: 0;
     position: static;
+}
+.footer * {
+    font-size: 1.1rem !important;
 }
 
 .footer-container {
@@ -33,7 +36,7 @@
 }
 
 .footer-logo {
-    height: 5.5rem;
+    height: 7.5rem;
     background: transparent;
     margin-bottom: 0.75rem;
 }
@@ -143,10 +146,16 @@
     .footer-top {
         flex-direction: column;
     }
-    .footer {
+    .footer *{
         font-size: 0.9rem;
     }
     .footer-copy {
         font-size: 0.875rem;
     }
+    .footer-logo {
+        height:4rem;
+    }
+}
+.footer-address {
+    font-size:0.975rem;
 }

@@ -8,6 +8,7 @@ import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { FiMail } from "react-icons/fi"
 import { FaPhoneAlt } from "react-icons/fa"
+import { FaLocationDot } from "react-icons/fa6"
 
 const currentYear = new Date().getFullYear()
 
@@ -27,7 +28,7 @@ const Footer = () => {
                   alt="Logo"
                   className="footer-logo"
                 />
-                <p>{footerDescription}</p>
+                {/* <p>{footerDescription}</p> */}
               </div>
               <div className="footer-links">
                 <div>
@@ -49,33 +50,70 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div>
-                  <h4 className="footer-heading">Address</h4>
+                  {/* <h4 className="footer-heading">Address</h4> */}
                   {region !== "Global" ? (
                     <>
-                      <p>{footerContent[region]?.additionalData}</p>
-                      <p>{footerContent[region]?.addressLine1}</p>
-                      <p>{footerContent[region]?.addressLine2}</p>
+                      <p className="footer-address">{footerContent[region]?.additionalData}</p>
+                      <p className="footer-address"><FaLocationDot/> {footerContent[region]?.addressLine1}</p>
+                      <p className="footer-address">{footerContent[region]?.addressLine2}</p>
                       {footerContent[region]?.mail && (
                         <a
                           href={`mailto:${footerContent[region]?.mail}`}
-                          className="footer-contact">
+                          className="footer-contact footer-address">
                           <FiMail /> {footerContent[region]?.mail}
                         </a>
                       )}
                       {footerContent[region]?.tel && (
                         <a
                           href={`tel:${footerContent[region]?.tel}`}
-                          className="footer-contact">
+                          className="footer-contact footer-address">
                           <FaPhoneAlt /> {footerContent[region]?.tel}
                         </a>
                       )}
                     </>
                   ) : (
-                    <Link
-                      to="/contact"
-                      className="footer-link">
-                      Contact Us
-                    </Link>
+                    <>
+                    <>
+                      <p className="footer-address">{footerContent["UK"]?.additionalData}</p>
+                      <p className="footer-address"> <FaLocationDot/> {footerContent["UK"]?.addressLine1}</p>
+                      <p className="footer-address">{footerContent["UK"]?.addressLine2}</p>
+                      {footerContent["UK"]?.mail && (
+                        <a
+                          href={`mailto:${footerContent["UK"]?.mail}`}
+                          className="footer-contact footer-address">
+                          <FiMail /> {footerContent["UK"]?.mail}
+                        </a>
+                      )}
+                      {footerContent["UK"]?.tel && (
+                        <a
+                          href={`tel:${footerContent["UK"]?.tel}`}
+                          className="footer-contact footer-address">
+                          <FaPhoneAlt /> {footerContent["UK"]?.tel}
+                        </a>
+                      )}
+                    </>
+                    <br/>
+                    <>
+                      <p className="footer-address">{footerContent["Canada"]?.additionalData}</p>
+                      <p className="footer-address"><FaLocationDot/> {footerContent["Canada"]?.addressLine1}</p>
+                      <p className="footer-address">{footerContent["Canada"]?.addressLine2}</p>
+                      {footerContent["Canada"]?.mail && (
+                        <a
+                          href={`mailto:${footerContent["Canada"]?.mail}`}
+                          className="footer-contact footer-address">
+                          <FiMail /> {footerContent["Canada"]?.mail}
+                        </a>
+                      )}
+                      {footerContent["Canada"]?.tel && (
+                        <a
+                          href={`tel:${footerContent["Canada"]?.tel}`}
+                          className="footer-contact footer-address">
+                          <FaPhoneAlt /> {footerContent["Canada"]?.tel}
+                        </a>
+                      )}
+                    </>
+                    </>
+                    
                   )}
                 </div>
               </div>

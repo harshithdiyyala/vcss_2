@@ -39,8 +39,14 @@ const Navbar = () => {
         <div
           className="flex-container desktop-menu"
           style={{ flex: 1, justifyContent: "flex-end", maxWidth: "55%" }}>
+            <div>
+              <Link to ={`${region}`}>Home</Link>
+            </div>
           <div>
             <Link to="/services"> Services</Link>
+          </div>
+          <div>
+          <Link to ="/careers">Careers</Link>
           </div>
           <div>
             <Link to="/about">About Us</Link>
@@ -58,9 +64,12 @@ const Navbar = () => {
           <div
             className="flex-container navbar-menu"
             style={{ flex: 1, justifyContent: "space-between", maxWidth: "55%" }}>
+            <Link to ={`${region}`}>Home</Link>
             <Link to="/services">Services</Link>
+            <Link to ="/careers">Careers</Link>
             <Link to="/about">About Us</Link>
             <Link to="/contact">Contact Us</Link>
+
             <CountrySelect
               region={region}
               setRegion={setRegion}
