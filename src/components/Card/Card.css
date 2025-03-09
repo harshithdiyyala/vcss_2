@@ -33,7 +33,7 @@
   width:50%;
   height:320px;
   border-radius: 16px;
-  object-fit:fill;
+  object-fit:cover;
   aspect-ratio: 16/9;
 }
 .content-font {

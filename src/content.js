@@ -33,6 +33,34 @@ import ServiceContent3 from "./assets/images/services/content/sia_content3.webp"
 import eventSecurity1 from "./assets/images/features/eventSecurity1.jpg"
 import eventSecurity2 from "./assets/images/features/eventSecurity2.jpg"
 import eventSecurity3 from "./assets/images/features/eventSecurity3.jpg"
+import constructionSecurity1 from './assets/images/features/constructionSecurity1.jpg'
+import constructionSecurity2 from './assets/images/features/constructionSecurity2.jpg'
+import constructionSecurity3 from './assets/images/features/constructionSecurity3.jpg'
+import alarmResponse1 from "./assets/images/features/alarmResponse1.jpg"
+import alarmResponse2 from "./assets/images/features/alarmResponse2.jpg"
+import alarmResponse3 from "./assets/images/features/alarmResponse3.jpg"
+import residentialSecurity1 from './assets/images/features/residentialSecurity1.jpg'
+import residentialSecurity2 from './assets/images/features/residentialSecurity2.jpg'
+import residentialSecurity3 from './assets/images/features/residentialSecurity3.jpg'
+import commercialSecurity1 from './assets/images/features/commercialSecurity1.jpg'
+import fire1 from './assets/images/features/fire1.jpg'
+import fire2 from './assets/images/features/fire2.jpg'
+import fire3 from './assets/images/features/fire3.jpg'
+
+import heroImage from "./assets/images/hero/hero-image1.jpg"
+import heroImage2 from "./assets/images/hero/hero-image2.jpg"
+import heroImage3 from "./assets/images/hero/hero-img3.jpg"
+import heroImage4 from "./assets/images/hero/hero-img.jpg"
+import clean1 from './assets/images/features/clean1.jpg'
+import clean2 from './assets/images/features/clean2.jpg'
+import clean3 from './assets/images/features/clean3.jpg'
+import cctv1 from "./assets/images/features/cctv1.jpg"
+import cctv2 from './assets/images/features/cctv2.jpg'
+import stewards1 from './assets/images/features/stewards1.jpg'
+import stewards2 from './assets/images/features/stewards2.jpg'
+import stewards3 from './assets/images/features/stewards3.jpg'
+
+
 import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 
 export const countries = [
@@ -309,7 +337,7 @@ export const servicesDescriptionsCanada = [
       "We deploy experienced guards, cutting-edge surveillance systems, and mobile patrols to deter unauthorized access and minimize potential hazards. By focusing on proactive prevention, we help you avoid costly delays and maintain operational efficiency.",
       "Whether you manage a small construction site or a large industrial project, we customize our security solutions to meet your specific needs. With us as your partner, your property and workforce remain protected at all times.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [constructionSecurity1,constructionSecurity2,constructionSecurity3],
   },
   {
     link: "loss-prevention",
@@ -329,7 +357,7 @@ export const servicesDescriptionsCanada = [
       "Our highly trained responders analyze alarm signals, assess risks, and take prompt action, whether dealing with break-ins, fire hazards, or other emergencies. Detailed incident reports provide transparency and insights into every response.",
       "With 24/7 availability and a commitment to excellence, we prioritize the safety of your premises. Rely on our Alarm Response services to protect your property, day or night.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [alarmResponse1, alarmResponse2, alarmResponse3],
   },
   {
     link: "residential-security",
@@ -339,7 +367,7 @@ export const servicesDescriptionsCanada = [
       "From uniformed guards to advanced monitoring systems, we provide proactive measures that safeguard your property against potential threats. Our focus on community integration ensures that security remains seamless and non-disruptive.",
       "Whether protecting a residential community or a bustling retail establishment, our strategies prioritize safety, trust, and peace of mind. Choose us to protect your property and foster a secure environment.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [residentialSecurity1,residentialSecurity2,residentialSecurity3],
   },
   {
     link: "commercial-security",
@@ -349,7 +377,7 @@ export const servicesDescriptionsCanada = [
       "From access control to surveillance and emergency response, we implement comprehensive strategies that address risks specific to your industry. Our skilled personnel and innovative tools ensure every aspect of your facility remains secure.",
       "Partner with us for a security solution tailored to your operations, allowing you to focus on growth and productivity. With our expertise, your business remains safeguarded and resilient.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [commercialSecurity1, ServiceContent2, alarmResponse1],
   },
   {
     link: "onsite-security",
@@ -359,7 +387,7 @@ export const servicesDescriptionsCanada = [
       "Through regular patrols, incident management, and proactive risk assessment, our team ensures a secure environment for your operations. We customize our approach to meet the specific needs of your property, offering round-the-clock protection.",
       "With our reliable on-site security solutions, you can operate with confidence, knowing your premises are under watchful protection.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [eventSecurity1, constructionSecurity2, residentialSecurity3],
   },
   {
     link: "fire-protection",
@@ -369,7 +397,7 @@ export const servicesDescriptionsCanada = [
       "We provide training, evacuation planning, and compliance support to ensure your property adheres to fire safety regulations. Our proactive strategies minimize risks and enhance readiness in critical situations.",
       "Partner with us to establish a comprehensive fire protection plan that prioritizes safety, protects your property, and provides peace of mind.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [fire1, fire2, fire3],
   },
   {
     link: "mobile-patrols",
@@ -379,7 +407,7 @@ export const servicesDescriptionsCanada = [
       "Our patrol officers are trained to identify suspicious activities, address safety concerns, and respond swiftly to incidents. Using advanced communication tools, we provide real-time updates and ensure effective coordination.",
       "Whether for residential, commercial, or industrial properties, our Mobile Patrol services offer flexible and efficient security coverage to meet your needs. Trust us to safeguard your property day and night.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [eventSecurity1, residentialSecurity2, commercialSecurity1],
   },
   {
     link: "uniformed-protection",
@@ -389,7 +417,7 @@ export const servicesDescriptionsCanada = [
       "From greeting visitors to managing conflicts and responding to emergencies, our uniformed personnel ensure a secure and welcoming environment for your employees and customers. Their expertise in conflict resolution and safety management ensures all situations are handled effectively.",
       "With our Uniformed Protection services, you gain a dependable partner dedicated to maintaining security while upholding your organization’s values and standards.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [heroImage, heroImage2, heroImage3],
   },
 ]
 
@@ -402,7 +430,7 @@ export const servicesDescriptionsUK = [
       "We provide an extensive range of security solutions tailored to the unique needs of various industries. From on-site guards to advanced surveillance systems, our services are designed to deliver reliable and seamless protection that our clients trust.",
       "By becoming part of our team, you’ll benefit from a supportive work environment, ongoing training programs, and avenues for professional growth. Whether you’re a seasoned expert or starting your security career, we are committed to helping you succeed.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [eventSecurity3, heroImage4, residentialSecurity2],
   },
   {
     link: "sia-training",
@@ -412,7 +440,7 @@ export const servicesDescriptionsUK = [
       "The training covers critical topics such as conflict resolution, risk assessment, and effective communication, enabling participants to tackle real-world challenges with confidence. Delivered by experienced instructors, the program ensures a thorough and engaging learning experience.",
       "Upon successful completion, participants receive SIA certification, unlocking numerous opportunities in the security sector. Invest in your future with our career-focused training programs that set you up for long-term success.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [residentialSecurity2, eventSecurity1, alarmResponse3],
   },
   {
     link: "cleaning-services",
@@ -422,7 +450,7 @@ export const servicesDescriptionsUK = [
       "From routine maintenance to specialized deep cleaning, our team uses advanced equipment and eco-friendly practices to deliver exceptional results. We address every corner of your premises, creating a welcoming and safe environment for occupants and visitors alike.",
       "Our dedicated professionals take pride in providing reliable and meticulous cleaning services. Experience the benefits of a cleaner, healthier space with our trusted and professional solutions.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [clean1, clean2, clean3],
   },
   {
     link: "fire-marshal",
@@ -432,7 +460,7 @@ export const servicesDescriptionsUK = [
       "Our trained Fire Marshals conduct thorough risk assessments, develop evacuation plans, and implement fire safety protocols to mitigate risks. They are equipped to respond swiftly and effectively to emergencies, minimizing potential hazards.",
       "Choosing our Fire Marshal services means partnering with experts committed to safeguarding your property and people. Trust us to deliver excellence in fire safety management, ensuring your peace of mind.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [fire1, fire2, fire3],
   },
   {
     link: "alarm-response",
@@ -442,7 +470,7 @@ export const servicesDescriptionsUK = [
       "Our trained responders handle a variety of scenarios, including break-ins, fire alarms, and other emergencies. Available 24/7, we provide prompt actions and detailed reports to keep you informed and reassured at all times.",
       "With our Alarm Response services, you can rely on professional and timely support to address any security concerns effectively. We prioritize your safety and deliver peace of mind around the clock.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [alarmResponse1,alarmResponse2,alarmResponse3],
   },
   {
     link: "residential-security",
@@ -452,7 +480,7 @@ export const servicesDescriptionsUK = [
       "From highly trained personnel to cutting-edge surveillance systems, we offer robust security measures that deter threats and respond to incidents effectively. Our approach emphasizes safety without compromising the welcoming atmosphere of your space.",
       "Whether you’re securing a residential community or a busy retail location, our professional team is committed to delivering reliable protection. Trust us to keep what matters most to you safe and secure.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [residentialSecurity1,residentialSecurity2,residentialSecurity3],
   },
   {
     link: "cctv-monitoring",
@@ -462,7 +490,7 @@ export const servicesDescriptionsUK = [
       "Using state-of-the-art technology and skilled operators, we monitor critical areas and provide actionable intelligence to enhance security measures. Our services are suitable for residential, commercial, and industrial settings, deterring crime and protecting assets.",
       "Partner with us for cutting-edge CCTV Monitoring solutions tailored to your unique requirements. Stay secure and informed with our reliable surveillance services.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [cctv1, cctv2, alarmResponse2],
   },
   {
     link: "stewards",
@@ -472,7 +500,7 @@ export const servicesDescriptionsUK = [
       "Trained to handle various scenarios, our stewards excel in crowd management, safety protocols, and customer assistance. Their approachable and professional demeanor enhances the overall experience for attendees, ensuring a successful event.",
       "From small gatherings to large-scale events, our stewards deliver reliable support tailored to your specific needs. Trust us to contribute to the success of your events with our exceptional services.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [stewards1, stewards2, stewards3],
   },
   {
     link: "event-security",
@@ -492,7 +520,7 @@ export const servicesDescriptionsUK = [
       "With a combination of trained guards, regular patrols, and advanced monitoring systems, we proactively identify risks and implement measures to mitigate them. Our approach ensures that your site remains secure around the clock.",
       "Trust our Construction Security solutions to maintain the integrity of your projects. We are committed to delivering tailored and reliable protection for construction sites of all sizes.",
     ],
-    images: [ServiceContent1, ServiceContent2, ServiceContent3],
+    images: [constructionSecurity1,constructionSecurity2,constructionSecurity3],
   },
 ]
 

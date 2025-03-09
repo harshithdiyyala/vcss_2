@@ -1,9 +1,5 @@
 import React, { useState, useEffect, useContext } from "react"
 import "./Hero.css"
-import heroImage from "../../assets/images/hero/hero-image1.jpg"
-import heroImage2 from "../../assets/images/hero/hero-image2.jpg"
-import heroImage3 from "../../assets/images/hero/hero-img3.jpg"
-import heroImage4 from "../../assets/images/hero/hero-img.jpg"
 import heroImage5 from "../../assets/images/hero/hero-image5.JPG"
 import heroImage6 from '../../assets/images/hero/hero-image6.JPG'
 import heroImage7 from '../../assets/images/hero/hero-image7.jpg'
