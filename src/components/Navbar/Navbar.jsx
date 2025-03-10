@@ -46,10 +46,10 @@ const Navbar = () => {
             <Link to="/services"> Services</Link>
           </div>
           <div>
-          <Link to ="/careers">Careers</Link>
+            <Link to="/about">About Us</Link>
           </div>
           <div>
-            <Link to="/about">About Us</Link>
+          <Link to ="/careers">Careers</Link>
           </div>
           <div>
             <Link to="/contact">Contact Us</Link>

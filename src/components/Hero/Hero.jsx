@@ -3,12 +3,16 @@ import "./Hero.css"
 import heroImage5 from "../../assets/images/hero/hero-image5.JPG"
 import heroImage6 from '../../assets/images/hero/hero-image6.JPG'
 import heroImage7 from '../../assets/images/hero/hero-image7.jpg'
+import heroImage3 from '../../assets/images/hero/hero-img3.jpg'
 import canadaHome from "../../assets/images/hero/canada-home.jpg"
+import vcssPersonnel from "../../assets/images/hero/vcss_personnel.jpeg"
+import vcssSecurity from "../../assets/images/hero/vcss_security.jpeg"
+import vcssDog from "../../assets/images/hero/vcss_with_dog.jpeg"
 import ukHome from '../../assets/images/hero/uk-home.jpg'
 import { RegionContext } from "../../context/RegionContext"
 import { GrNext, GrPrevious } from "react-icons/gr"
 import { heroContent } from "../../content"
-const initialImages = [heroImage5, heroImage6, heroImage7]
+const initialImages = [heroImage5,vcssDog,vcssPersonnel,vcssSecurity]
 
 const Hero = () => {
 
@@ -17,9 +21,15 @@ const [currentSlide, setCurrentSlide] = useState(0);
 const [heroImages, setHeroImages] = useState(initialImages);
 
 useEffect(() => {
-  setHeroImages(() =>
-    region === "UK" ? [...initialImages, ukHome] : region === 'Canada' ? [...initialImages, canadaHome]  : [...initialImages]
-  );
+  setHeroImages(() => {
+    if (region === "UK") {
+      return [...initialImages, ukHome]; // Only UK image
+    } else if (region === "Canada") {
+      return [...initialImages, canadaHome]; // Only Canada image
+    } else {
+      return [...initialImages, ukHome, canadaHome]; // Both for other regions
+    }
+  });
 }, [region]);
 
 const nextSlide = () => {
@@ -61,11 +71,11 @@ useEffect(() => {
             <br/>
             V Connect Security Services
           </h1>
-          {/* <p
+          <p
             className="hero-desc"
             style={{ color: "#f8f8ff" }}>
             {heroContent[`${region}`]}
-          </p> */}
+          </p>
           <div className="image-change-container flex-container">
             <button
               className="carousel-btn"

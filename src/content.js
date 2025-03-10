@@ -51,6 +51,7 @@ import heroImage from "./assets/images/hero/hero-image1.jpg"
 import heroImage2 from "./assets/images/hero/hero-image2.jpg"
 import heroImage3 from "./assets/images/hero/hero-img3.jpg"
 import heroImage4 from "./assets/images/hero/hero-img.jpg"
+import heroImage7 from "./assets/images/hero/hero-image7.jpg"
 import clean1 from './assets/images/features/clean1.jpg'
 import clean2 from './assets/images/features/clean2.jpg'
 import clean3 from './assets/images/features/clean3.jpg'
@@ -77,9 +78,9 @@ export const sections = [
 ]
 
 export const heroContent = {
-  Canada: "The V Connect Security Services (VCSS), a leading provider of job opportunities across the Canada. Our mission is to connect job seekers with rewarding employment opportunities from Security Guard Services in a variety of sectors.",
-  UK: "The V Connect, a leading provider of job opportunities across the United Kingdom. Our mission is to connect job seekers with rewarding employment opportunities in a variety of sectors, including security services, Staffing/recruiting services, events, and many others.",
-  Global: "The V Connect, a leading provider of job opportunities across the globe. Our mission is to connect job seekers with rewarding employment opportunities in a variety of sectors, including security services, Staffing/recruiting services, events, and many others.",
+  Canada: "At V Connect Security Services, we specialize in delivering top-tier security solutions for businesses, events, and individuals. From corporate security and event protection to private security and risk management, we provide highly trained professionals to ensure safety and reliability. Committed to excellence, we offer tailored security services that prioritize protection, trust, and peace of mind.",
+  UK: "At V Connect Security Services, we specialize in delivering top-tier security solutions for businesses, events, and individuals. From corporate security and event protection to private security and risk management, we provide highly trained professionals to ensure safety and reliability. Committed to excellence, we offer tailored security services that prioritize protection, trust, and peace of mind.",
+  Global: "At V Connect Security Services, we specialize in delivering top-tier security solutions for businesses, events, and individuals. From corporate security and event protection to private security and risk management, we provide highly trained professionals to ensure safety and reliability. Committed to excellence, we offer tailored security services that prioritize protection, trust, and peace of mind.",
 }
 
 export const logoContent = {
@@ -250,7 +251,7 @@ export const socialContactLinks = {
     { icon: <FaLinkedin />, name: "Linkedin", link: "https://www.linkedin.com/company/v-connect-security/about/" },
     { icon: <FaInstagram />, link: "https://instagram.com/v_connect_security?igshid=OGQ5ZDc2ODk2ZA==", name: "Instagram" },
   ],
-  UK: [{ icon: <FaWhatsapp />, name: "WhatsApp", link: "https://wa.me/+447864512999" }],
+  UK: [{ icon: <FaWhatsapp />, name: "WhatsApp", link: "https://wa.me/+4403301339591" }],
 }
 
 export const socialContactLinksGlobal = [...socialContactLinks.Canada, ...socialContactLinks.UK]
@@ -258,7 +259,7 @@ export const socialContactLinksGlobal = [...socialContactLinks.Canada, ...social
 export const footerDescription = "The V Connect, a leading provider of job opportunities across the United Kingdom. Our mission is to connect job seekers with rewarding employment opportunities in a variety of sectors, including security services, Staffing/recruiting services, events, and many others."
 export const footerContent = {
   Canada: { addressLine1: "25 Baymills Blvd", addressLine2: "Barrie, ON. L4N 7C9", mail: "info@vcsscanada.com", tel: "+1(579)995-3402" },
-  UK: { addressLine1: "2nd Floor, Titan Court, Bishop Square", addressLine2: "Hatfield AL10 9NA, United Kingdom", mail: "info@vcss.uk", tel: "+447864512999", additionalData: "Company registered in England and Wales under the Company number: 14675823" },
+  UK: { addressLine1: "2nd Floor, Titan Court, Bishop Square", addressLine2: "Hatfield AL10 9NA, United Kingdom", mail: "info@vcss.uk", tel: "+4403301339591", additionalData: "Company registered in England and Wales under the Company number: 14675823" },
 }
 
 export const termsAndConditions = [
@@ -292,14 +293,14 @@ export const emails = {
 
 export const contacts = {
   Canada: "+1 (705) 241-9177",
-  UK: "+44 (786) 4512-999",
+  UK: "+44 0330 233 9591",
 }
 
 export const blogContent = [
   {
     title: "Your Shield of Safety",
     description: "At VCSS, we redefine security with tailored solutions for every need, ensuring peace of mind with precision and care.",
-    imgLink: VCSSBLog1,
+    imgLink: heroImage7,
   },
   {
     title: "Excellence in Every Guarded Moment",

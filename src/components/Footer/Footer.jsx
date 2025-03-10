@@ -7,7 +7,7 @@ import { useContext } from "react"
 
 import { Link } from "react-router-dom"
 import { FiMail } from "react-icons/fi"
-import { FaInstagram, FaPhoneAlt } from "react-icons/fa"
+import { FaInstagram, FaPhoneAlt, FaTwitter } from "react-icons/fa"
 import { FaFacebook, FaLocationDot, FaWhatsapp, FaX } from "react-icons/fa6"
 
 const currentYear = new Date().getFullYear()
@@ -29,10 +29,10 @@ const Footer = () => {
                   className="footer-logo"
                 />
                 <div className="links">
-                  <a href ="/"> <FaWhatsapp/> </a>
-                  <a href ="/"><FaFacebook/> </a>
-                  <a href ="/"> <FaInstagram/> </a>
-                  <a href ="/"> <FaX/></a>
+                  <a href ="/" className="footer-link"> <FaWhatsapp/> </a>
+                  <a href ="/" className="footer-link"><FaFacebook/> </a>
+                  <a href ="/" className="footer-link"> <FaInstagram/> </a>
+                  <a href ="/" className="footer-link"> <FaTwitter/></a>
                 </div>
                 {/* <p>{footerDescription}</p> */}
               </div>
@@ -59,7 +59,13 @@ const Footer = () => {
                   {/* <h4 className="footer-heading">Address</h4> */}
                   {region !== "Global" ? (
                     <>
-                      <p className="footer-address">{footerContent[region]?.additionalData}</p>
+                {footerContent[region]?.additionalData && (
+                    <>
+                      <p className="footer-address">{footerContent[region].additionalData}</p>
+                      <br />
+                    </>
+                  )}
+                  <h4 className="footer-heading">Address</h4>
                       <p className="footer-address"><FaLocationDot/> {footerContent[region]?.addressLine1}</p>
                       <p className="footer-address">{footerContent[region]?.addressLine2}</p>
                       {footerContent[region]?.mail && (
@@ -80,7 +86,7 @@ const Footer = () => {
                   ) : (
                     <>
                     <>
-                      <p className="footer-address">{footerContent["UK"]?.additionalData}</p>
+                      <h4 className="footer-heading">Address</h4>
                       <p className="footer-address"> <FaLocationDot/> {footerContent["UK"]?.addressLine1}</p>
                       <p className="footer-address">{footerContent["UK"]?.addressLine2}</p>
                       {footerContent["UK"]?.mail && (
@@ -100,7 +106,6 @@ const Footer = () => {
                     </>
                     <br/>
                     <>
-                      <p className="footer-address">{footerContent["Canada"]?.additionalData}</p>
                       <p className="footer-address"><FaLocationDot/> {footerContent["Canada"]?.addressLine1}</p>
                       <p className="footer-address">{footerContent["Canada"]?.addressLine2}</p>
                       {footerContent["Canada"]?.mail && (

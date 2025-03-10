@@ -10,6 +10,11 @@
     --accent: #101828;
 }
 
+html {
+    font-size: 90%;
+    /* Reduces text size by 10% globally */
+}
+
 body {
     background-color: #f8f8ff;
 }

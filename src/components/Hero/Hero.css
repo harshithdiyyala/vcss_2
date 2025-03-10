@@ -105,7 +105,6 @@
         background-color: transparent;
         max-width: 100%;
     }
-    
     .hero-title {
         font-size: 2rem;
         text-align: center;
@@ -159,20 +158,19 @@
 }
 
 .hero-content2 {
-    
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100%;
-
+    height: 100%;
     z-index: 10;
     position: inherit;
     background-color: inherit;
     padding: 1.25rem;
     border-radius: 0.75rem;
 }
-.hero-content2 > div{
+
+.hero-content2>div {
     max-width: 45%;
 }
 
@@ -182,10 +180,11 @@
         background-color: transparent;
         max-width: 100%;
     }
-    .hero-content2 > div {
-        max-width : 95%;
+    .hero-content2>div {
+        max-width: 95%;
     }
 }
+
 .hero-title3 {
-    font-size:4.5rem;
+    font-size: 2.5rem;
 }
