@@ -184,7 +184,7 @@
   .carousel-footer-track {
     display: flex;
     width: max-content;
-    animation: scroll 15s linear infinite;
+    will-change: transform;
   }
   
   .carousel-footer-image {
@@ -192,9 +192,10 @@
     height: 100px;
     margin: 0 10px;
     border-radius: 16px;
+    flex-shrink: 0;
   }
   
-  @keyframes scroll {
+  /* @keyframes scroll {
     from {
       transform: translateX(0);
     }
@@ -203,4 +204,4 @@
 
     }
   }
-  
+   */

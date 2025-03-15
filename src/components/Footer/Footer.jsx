@@ -26,9 +26,20 @@ const Footer = () => {
   useEffect(() => {
     const track = trackRef.current;
     if (!track) return;
+    
+    let position = 0;
+    const speed = 0.5; // Adjust speed for smooth scrolling
 
-    const width = track.scrollWidth / 2;
-    track.style.setProperty("--scrollWidth", `${width}px`);
+    const scroll = () => {
+      position -= speed;
+      if (Math.abs(position) >= track.scrollWidth / 2) {
+        position = 0;
+      }
+      track.style.transform = `translateX(${position}px)`;
+      requestAnimationFrame(scroll);
+    };
+
+    scroll();
   }, []);
 
   return (
