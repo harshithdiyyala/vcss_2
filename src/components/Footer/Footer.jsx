@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import "./Footer.css"
 import Logo from "../../assets/images/logos/VCSS_Logo_f.png"
 import { footerDescription, footerContent } from "../../content"
@@ -21,15 +21,29 @@ const images = [footer1,footer2,footer3,footer5,footer6]
 
 const Footer = () => {
   const { region } = useContext(RegionContext)
+  const trackRef = useRef(null);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const width = track.scrollWidth / 2;
+    track.style.setProperty("--scrollWidth", `${width}px`);
+  }, []);
+
   return (
     <section
       id="footer"
       style={{ backgroundColor: "#0501360D" }}>
       <div className="container mx-auto">
         <footer className="footer">
-          <div className="footer-container" style = {{display: 'flex', gap : '0.65rem', flexWrap :'wrap'}}>
-            {images.map((item => <img src = {item} key = {item} height={200} style = {{borderRadius : '16px', height: '150px', objectFit :'fill'}} />))}
-          </div>
+        <div className="carousel-footer-container">
+      <div className="carousel-footer-track" ref = {trackRef}>
+        {[ ...images,...images].map((img, index) => (
+          <img key={index} src={img} alt={`carousel-${index}`} className="carousel-footer-image" />
+        ))}
+      </div>
+    </div>
           <div className="footer-container">
             <div className="footer-top">
               <div className="footer-description">
