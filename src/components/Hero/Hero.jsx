@@ -7,12 +7,13 @@ import heroImage3 from '../../assets/images/hero/hero-img3.jpg'
 import canadaHome from "../../assets/images/hero/canada-home.jpg"
 import vcssPersonnel from "../../assets/images/hero/vcss_personnel.jpeg"
 import vcssSecurity from "../../assets/images/hero/vcss_security.jpeg"
+import vcssPersonnel2 from '../../assets/images/hero/vcss_personnel2.JPG'
 import vcssDog from "../../assets/images/hero/vcss_with_dog.jpeg"
 import ukHome from '../../assets/images/hero/uk-home.jpg'
 import { RegionContext } from "../../context/RegionContext"
 import { GrNext, GrPrevious } from "react-icons/gr"
 import { heroContent } from "../../content"
-const initialImages = [heroImage5,vcssDog,vcssPersonnel,vcssSecurity]
+const initialImages = [heroImage5,heroImage6,heroImage7,vcssDog,vcssPersonnel2]
 
 const Hero = () => {
 

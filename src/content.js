@@ -24,8 +24,8 @@ import UniformedSecurityUK from "./assets/images/services/uk/uniformed-security.
 import StewardService from "./assets/images/services/uk/steward.jpg"
 import GlobalFlag from "./assets/images/countries/global.png"
 import VCSSBLog1 from "./assets/images/blogs/vcss_with_dog.jpeg"
-import VCSSBLog2 from "./assets/images/blogs/vcss_personnel.jpeg"
-import VCSSBLog3 from "./assets/images/blogs/vcss_security.jpeg"
+import VCSSBLog2 from "./assets/images/hero/vcss_personnel2.JPG"
+import VCSSBLog3 from "./assets/images/hero/vcss_night_car.jpg"
 import VCSSBLog4 from "./assets/images/blogs/vcss_with_dog2.jpeg"
 import ServiceContent1 from "./assets/images/services/content/sia_content1.png"
 import ServiceContent2 from "./assets/images/services/content/sia_content2.jpg"
@@ -60,6 +60,8 @@ import cctv2 from './assets/images/features/cctv2.jpg'
 import stewards1 from './assets/images/features/stewards1.jpg'
 import stewards2 from './assets/images/features/stewards2.jpg'
 import stewards3 from './assets/images/features/stewards3.jpg'
+import dogHandler1 from './assets/images/features/dog-handler1.jpg'
+import dogHandler2 from './assets/images/features/dog-handler2.jpg'
 
 
 import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa"
@@ -171,11 +173,12 @@ export const servicesContent = {
       longContent: "Our Security Services connect you with highly trained professionals committed to ensuring the safety of individuals and properties. From event security to on-site protection, we deliver comprehensive solutions to meet diverse security needs.",
     },
     {
-      link: "sia-training",
-      imgLink: UniformedSecurityUK,
-      title: "SIA Training",
-      content: "Comprehensive training programs to prepare you for a successful security career.",
-      longContent: "Our SIA Training program equips aspiring security professionals with the skills and certifications needed for a thriving career. With expert-led courses and hands-on training, we ensure you are fully prepared for industry challenges.",
+      link: "dog-handling",
+      imgLink: VCSSBLog1,
+      title: "Dog Handling",
+      content: "Professional dog handling services for enhanced security, threat detection, and asset protection.",
+      longContent: "Our trained dogs and handlers provide added security by detecting threats and ensuring safety. They help with patrolling, monitoring, and preventing risks in various environments."
+
     },
     {
       link: "cleaning-services",
@@ -258,8 +261,8 @@ export const socialContactLinksGlobal = [...socialContactLinks.Canada, ...social
 
 export const footerDescription = "The V Connect, a leading provider of job opportunities across the United Kingdom. Our mission is to connect job seekers with rewarding employment opportunities in a variety of sectors, including security services, Staffing/recruiting services, events, and many others."
 export const footerContent = {
-  Canada: { addressLine1: "25 Baymills Blvd", addressLine2: "Barrie, ON. L4N 7C9", mail: "info@vcsscanada.com", tel: "+1(579)995-3402" },
-  UK: { addressLine1: "2nd Floor, Titan Court, Bishop Square", addressLine2: "Hatfield AL10 9NA, United Kingdom", mail: "info@vcss.uk", tel: "+4403301339591", additionalData: "Company registered in England and Wales under the Company number: 14675823" },
+  Canada: { addressLine1: "25 Baymills Blvd", addressLine2: "Barrie, ON. L4N 7C9, Canada", mail: "info@vcsscanada.com", tel: "+1(579)995-3402" },
+  UK: { addressLine1: "2nd Floor, Titan Court, Bishop Square", addressLine2: "Hatfield AL10 9NA, United Kingdom", mail: "info@vcss.uk", tel: "+44 033 0133 9591", additionalData: "Company registered in England and Wales under the Company number: 14675823" },
 }
 
 export const termsAndConditions = [
@@ -295,6 +298,52 @@ export const contacts = {
   Canada: "+1 (705) 241-9177",
   UK: "+44 0330 233 9591",
 }
+
+export const blogcontentUK =[
+  {
+    title: "Empowering Your Safety, Every Step",
+    description: "At VCSS, we go beyond conventional security, crafting personalized solutions that ensure unwavering protection and peace of mind.",
+    imgLink: heroImage7,
+  },
+  {
+    title: "Guardians of Excellence, Always",
+    description: "From safeguarding critical sites to elite protection, we combine top-tier expertise with advanced technology for seamless security.",
+    imgLink: VCSSBLog2,
+  },
+  {
+    title: "Redefining Security, Beyond Limits",
+    description: "Whether securing assets or mitigating risks, VCSS remains a symbol of trust, vigilance, and unparalleled commitment.",
+    imgLink: VCSSBLog3,
+  },
+  {
+    title: "Unwavering Protection, Around the Clock",
+    description: "With elite-trained professionals and state-of-the-art security tools, we ensure your safety, anytime, anywhere.",
+    imgLink: VCSSBLog4,
+  },
+]
+
+export const blogContentCanada = [
+  {
+    title: "Your Safety, Our Priority",
+    description: "VCSS crafts customized security solutions that offer precision, reliability, and peace of mind for every situation.",
+    imgLink: heroImage7,
+  },
+  {
+    title: "Precision Protection, Every Moment",
+    description: "From high-risk environments to personal security, we integrate expertise with technology for unparalleled safety.",
+    imgLink: VCSSBLog2,
+  },
+  {
+    title: "Beyond Protection: A Promise of Trust",
+    description: "Whether defending assets or reducing risks, VCSS stands strong as your trusted security partner.",
+    imgLink: VCSSBLog3,
+  },
+  {
+    title: "24/7 Security, 100% Commitment",
+    description: "Armed with industry-leading professionals and the latest tools, we ensure uncompromising protection at all times.",
+    imgLink: VCSSBLog4,
+  },
+]
 
 export const blogContent = [
   {
@@ -434,14 +483,14 @@ export const servicesDescriptionsUK = [
     images: [eventSecurity3, heroImage4, residentialSecurity2],
   },
   {
-    link: "sia-training",
-    category: "SIA Training",
+    link: "dog-handling",
+    category: "Dog Handling",
     content: [
-      "Earning professional certification is a vital step toward building a rewarding career in the security industry. Our SIA Training programs are designed to equip individuals with the essential skills, knowledge, and qualifications required for success in security roles.",
-      "The training covers critical topics such as conflict resolution, risk assessment, and effective communication, enabling participants to tackle real-world challenges with confidence. Delivered by experienced instructors, the program ensures a thorough and engaging learning experience.",
-      "Upon successful completion, participants receive SIA certification, unlocking numerous opportunities in the security sector. Invest in your future with our career-focused training programs that set you up for long-term success.",
+       "Our specialized Dog Handling service provides highly trained security dogs and expert handlers to ensure maximum safety and protection in a variety of environments. Whether for patrolling, crowd control, or detecting unauthorized intrusions, our service is designed to enhance security measures with unmatched efficiency. Our teams are rigorously trained to handle real-world security challenges, offering a proactive approach to risk management while maintaining strict ethical and legal standards.",
+       "Security dogs play a crucial role in detecting threats that might otherwise go unnoticed. Our canine units are trained for multiple security applications, including perimeter defense, search-and-detection tasks, and controlled suspect apprehension. With heightened sensory abilities, these dogs can identify explosives, narcotics, and unauthorized individuals with remarkable accuracy, making them an indispensable asset in high-risk areas. The presence of a trained security dog alone acts as a strong deterrent against potential threats, significantly reducing security risks.",
+       "At the core of our service is the seamless collaboration between our skilled handlers and their canine partners. Each team undergoes continuous training to adapt to evolving security needs, ensuring that they operate with precision and discipline in various environments, from corporate premises to large-scale events and high-security zones. Our commitment to professionalism, efficiency, and ethical security solutions makes our Dog Handling service an ideal choice for businesses, events, and organizations looking to strengthen their security framework with proven expertise."
     ],
-    images: [residentialSecurity2, eventSecurity1, alarmResponse3],
+    images: [VCSSBLog4,dogHandler1,dogHandler2],
   },
   {
     link: "cleaning-services",

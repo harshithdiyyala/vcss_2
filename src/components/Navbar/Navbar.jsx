@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
         <div
           className="flex-container desktop-menu"
-          style={{ flex: 1, justifyContent: "flex-end", maxWidth: "55%" }}>
+          style={{ flex: 1, justifyContent: "flex-end", maxWidth: "55%", gap:'0.65rem' }}>
             <div>
               <Link to ={`${region}`}>Home</Link>
             </div>

@@ -1,20 +1,26 @@
-import React, { useState, useEffect } from "react"
-import { blogContent } from "../../content"
+import React, { useState, useEffect,useContext } from "react"
+import { blogContent as blogContentGlobal, blogContentCanada,blogcontentUK} from "../../content"
 import "./Blog.css"
 import { Link } from "react-router-dom"
 import { FaExternalLinkAlt, FaLink } from "react-icons/fa"
+import { RegionContext } from "../../context/RegionContext"
 
 const Blog = () => {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
+  const {region} = useContext(RegionContext)
+  const [blogContent,setContent] = useState(region === 'UK' ? blogcontentUK : region === 'Canada' ? blogContentCanada : blogContentGlobal)
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768) // Check if the screen is mobile
     }
     handleResize() // Initial check
+
+    
     window.addEventListener("resize", handleResize) // Add event listener for resizing
     return () => window.removeEventListener("resize", handleResize) // Clean up on unmount
+
   }, [])
 
   useEffect(() => {
